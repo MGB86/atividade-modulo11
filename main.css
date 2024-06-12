@@ -1,0 +1,157 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    max-width: 667px;
+    width: 100%;
+    margin: 0 auto;
+}
+header h1{
+    font-size: 3em;
+    font-style: italic;
+    max-width: 60%;
+    word-break:normal;
+    width: 30vh;
+}
+header{
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    background-color: rgb(0, 204, 204);
+    color: #fff;
+}
+header li{
+    list-style: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 6px;
+}
+li a{
+    text-decoration: none;
+    color: #fff;
+}
+.conteudo{
+    display: block;
+    margin: 32px;
+}
+.conteudo img{
+    max-width: 100%
+}
+h2 {
+    padding: 8px 0;
+    border-bottom: 4px solid rgb(0, 204, 204);
+    font-size: 1.7em;
+    color: rgb(0, 204, 204);
+} 
+.sobre p {
+    padding: 12px 0;
+    font-size: 1.3em;
+}
+.produtos li {
+    list-style: none;
+}
+.produtos img{
+    padding-top: 32px;
+}
+.produtos h3{
+    font-size: 1.5em;
+}
+.produtos div, p{
+    font-size: 1.2em;
+    padding-bottom: 8px;
+}
+button{
+    padding: 8px;
+    max-width: 100%;
+    width: 311px;
+    background-color: rgb(0, 204, 204);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.2em;
+}
+p{
+    text-align: justify;
+}
+@media screen and (max-width: 640px){
+    
+}
+
+@media screen and (min-width: 641px){
+    header{
+        justify-content: space-around;
+    }
+    header li{
+        margin-right: 8px;
+        display: inline-block;
+    }
+    .produtos{
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+        column-gap: 2%;
+    }
+}
+@media screen and (min-width: 1024px){
+    .container{
+        max-width: 1024px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    header{
+        justify-content: space-around;
+        align-items: center;
+    }
+    header li{
+        margin-right: 8px;
+        display: inline-block;
+        font-size: 1.2em;
+    }
+    header h1{
+        font-size: 2em;
+    }
+    h2 {
+        padding: 8px 0;
+        border-bottom: 4px solid rgb(0, 204, 204);
+        font-size: 1.7em;
+        color: rgb(0, 204, 204);
+        max-width:unset;
+    }
+    .produtos{
+        display: grid;
+        grid-template-columns: repeat(4, 23.5%);
+        column-gap: 2%;
+    }
+    .sobre img{
+        height: 250px;
+    }
+    .sobre{
+        display: flex;
+        align-items: flex-start;
+    }
+    .fachada h2 {
+        font-size: 1.2em;
+        padding-top: 0;
+    }
+    .fachada p{
+        font-size: 1em;
+    }
+    .fachada{
+        margin-left: 32px;
+    }
+    h2{
+        font-size: 1.2em;
+    }
+    .produtos h3, strong{
+        font-size: 1.1em;
+    }
+    .produtos div, p{
+        font-size: 1em;
+        padding-bottom: 8px;
+    }
+    .produto button{
+        font-size: 1em;
+    }
+}
